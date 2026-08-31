@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteConfig } from '../data/site';
+import { Image } from 'astro:assets';
+
+import heroBg from '../assets/images/hero-bg.png';
+import aboutBg from '../assets/images/about-bg.png';
+import productBg from '../assets/images/product-bg.png';
+---
+
+<Layout title={`${siteConfig.name} | 專業半導體及電子零件代理與經銷商`} currentPath="/">
+  
+  <!-- HERO SECTION -->
+  <section class="relative bg-slate-950 text-white min-h-[520px] lg:min-h-[620px] flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <Image 
+        src={heroBg} 
+        alt="仰發科技 - 服務與專業半導體代理" 
+        class="w-full h-full object-cover object-center opacity-70"
+        priority={true}
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-slate-950/90"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center space-y-6">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-300 text-sm font-medium backdrop-blur-sm animate-pulse">
+        <span>專業半導體與電子零件最佳夥伴</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-wide text-white">
+        服 務
+      </h1>
+      <p class="text-2xl sm:text-3xl lg:text-4xl font-light text-sky-200 tracking-wider">
+        您的需求最優先
+      </p>
+      <div class="pt-6 flex flex-wrap justify-center gap-4">
+        <a 
+          href="#about" 
+          class="px-8 py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-medium shadow-lg shadow-sky-600/30 transition-all duration-200 hover:-translate-y-0.5"
+        >
+          探索公司簡介
+        </a>
+        <a 
+          href="/brands/" 
+          class="px-8 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium border border-white/20 backdrop-blur-sm transition-all duration-200"
+        >
+          查看代理品牌
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: 公司簡介 (ABOUT US) -->
+  <section id="about" class="relative py-20 lg:py-28 overflow-hidden bg-slate-100">
+    <!-- Background Texture -->
+    <div class="absolute inset-0 z-0">
+      <Image 
+        src={aboutBg} 
+        alt="公司簡介背景" 
+        class="w-full h-full object-cover object-center opacity-30"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-slate-50/80 to-white/95"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+          公司簡介
+        </h2>
+        <div class="w-16 h-1 bg-sky-600 mx-auto rounded-full"></div>
+        <p class="text-slate-600 text-base sm:text-lg">
+          深耕半導體與電子零件市場，提供最快速、穩定的整合服務
+        </p>
+      </div>
+
+      <!-- Glassmorphic Content Card -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-xl space-y-8 text-slate-700 leading-relaxed text-justify text-base sm:text-lg">
+        
+        <p>
+          <strong class="text-slate-900 font-semibold">仰發科技成立於西元2007年11月</strong>，營運項目主要以銷售功率元件與IC產品為主，藉由專業經營能力陸續取得眾多國際品牌代理與經銷。客戶群主要以 PC 週邊、消費性電子產品、醫療應用產品、IOT 應用產品以及將觸角衍生至近期炙手可熱車用的第三代半導體相關產品。
+        </p>
+
+        <p>
+          仰發科技為專業半導體及電子零件代理商，是客戶在購料時的最佳選擇。我們深刻了解目前在拚價格、交期及要求備貨的時代，為客戶提供快速反應市場價格及因應交期過長問題進行長期備料，進而縮短交貨時間的專業服務。
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div class="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 flex items-start space-x-4">
+            <div class="p-3 bg-sky-600 text-white rounded-xl shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">堅強專業技術支援</h3>
+              <p class="text-sm text-slate-600">由原廠專業應用工程師與研發工程師組成技術團隊，為客戶提供技術支援與整合方案，創造更高產品附加價值。</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 flex items-start space-x-4">
+            <div class="p-3 bg-sky-600 text-white rounded-xl shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">大中華完整行銷網絡</h3>
+              <p class="text-sm text-slate-600">除台北總公司外，已積極展開布局於大中華地區，期以更完整迅速的行銷網絡來提供全方位服務。</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-slate-600">
+          我們注重人員職前訓練，以及定期的專業課程以利增進專業知識，以員工團結力和凝聚力為經營方針，團隊一同成長，追求永續經營。
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 產品介紹 (PRODUCTS) -->
+  <section class="relative py-20 lg:py-28 overflow-hidden bg-slate-900 text-white">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <Image 
+        src={productBg} 
+        alt="產品介紹背景" 
+        class="w-full h-full object-cover object-center opacity-25"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-950"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          產品介紹
+        </h2>
+        <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full"></div>
+        <p class="text-slate-300 text-base sm:text-lg">
+          多元半導體元件與電容產品，滿足各產業購料需求
+        </p>
+      </div>
+
+      <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl space-y-8">
+        <p class="text-lg text-slate-200 leading-relaxed text-justify">
+          本公司專營代理國內外知名半導體零件產品如：<span class="text-sky-300 font-semibold">全系列 MOSFET、電晶體、二極體、三極體、電解電容、固態電容、X1 安規電容、LED、第三代半導體 SiC</span> 等等。
+        </p>
+
+        <!-- Brand Portfolios Badges -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+          <!-- 代理品牌清單 -->
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-700 flex flex-col justify-between">
+            <div class="space-y-4">
+              <h3 class="text-xl font-bold text-sky-400 flex items-center">
+                <span class="w-2 h-5 bg-sky-400 rounded-sm mr-2.5"></span>
+                代理品牌
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                JACKCON 融欣、EMC 杰力、NIKO 尼克森、UTC 友順、佰鴻工業、德微科技、MATRIX 鑫茂微、科特、BASIC 基本半導體。
+              </p>
+            </div>
+            <div class="pt-6">
+              <a 
+                href="/brands/" 
+                class="inline-flex items-center text-sm font-semibold text-sky-400 hover:text-sky-300 transition-colors"
+              >
+                瀏覽代理品牌詳細規格 ›
+              </a>
+            </div>
+          </div>
+
+          <!-- 經銷品牌清單 -->
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-700 flex flex-col justify-between">
+            <div class="space-y-4">
+              <h3 class="text-xl font-bold text-emerald-400 flex items-center">
+                <span class="w-2 h-5 bg-emerald-400 rounded-sm mr-2.5"></span>
+                經銷服務
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                LITTLEFUSE、NICHICON、Nippon Chemi-Con、PANASONIC 松下、TOSHIBA 東芝 等世界知名品牌。
+              </p>
+            </div>
+            <div class="pt-6">
+              <a 
+                href="/dealer/" 
+                class="inline-flex items-center text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                瀏覽經銷品牌型錄 ›
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</Layout>

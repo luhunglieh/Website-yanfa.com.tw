@@ -1,0 +1,31 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Environment & Logs
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+npm-debug.log*
+
+# WordPress legacy / archives
+wp-admin/
+wp-includes/
+wp-content/
+*.php
+.htaccess*
+error_log
+readme.html
+license.txt
+xmlrpc.php
+sitemap.xml
+home.html
+brands.html
+dealer.html
+scratch_home.html
+analyze.py
