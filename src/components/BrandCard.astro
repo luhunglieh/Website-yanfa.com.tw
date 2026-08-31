@@ -16,8 +16,8 @@ const { name, fullName, logo, description, officialUrl, badge = '品牌' } = Ast
 
 <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden hover:-translate-y-1">
   <!-- Top Logo & Header -->
-  <div class="p-6 sm:p-8 bg-gradient-to-b from-slate-50/80 to-white border-b border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-    <div class="h-32 sm:h-40 w-full sm:w-88 flex items-center justify-center p-6 bg-white rounded-2xl border border-slate-200/90 shadow-xs group-hover:scale-[1.02] group-hover:shadow-md transition-all duration-300">
+  <div class="p-6 sm:p-8 bg-gradient-to-b from-slate-50/80 to-white border-b border-slate-100 flex items-center justify-center">
+    <div class="h-32 sm:h-40 w-full flex items-center justify-center p-6 bg-white rounded-2xl border border-slate-200/90 shadow-xs group-hover:scale-[1.02] group-hover:shadow-md transition-all duration-300">
       <Image 
         src={logo} 
         alt={name} 
@@ -25,9 +25,6 @@ const { name, fullName, logo, description, officialUrl, badge = '品牌' } = Ast
         loading="lazy"
       />
     </div>
-    <span class="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-semibold bg-sky-50 text-sky-700 border border-sky-200/80 self-start sm:self-center shrink-0">
-      {badge}
-    </span>
   </div>
 
   <!-- Content -->
