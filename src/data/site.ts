@@ -9,6 +9,7 @@ export interface SiteConfig {
   email: string;
   mapUrl: string;
   navItems: { label: string; href: string }[];
+  googleAnalyticsId?: string;
 }
 
 export const siteConfig: SiteConfig = {
@@ -21,6 +22,7 @@ export const siteConfig: SiteConfig = {
   fax: '02-2228-1776',
   email: 'jane.sun@yanfa.com.tw',
   mapUrl: 'https://goo.gl/maps/A827R63W6FQ11LiMA',
+  googleAnalyticsId: 'G-TQDJH1PPH4',
   navItems: [
     { label: '關於我們', href: '/' },
     { label: '代理品牌', href: '/brands/' },
