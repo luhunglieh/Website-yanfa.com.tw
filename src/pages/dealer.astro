@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import BrandCard from '../components/BrandCard.astro';
 import { dealersData } from '../data/dealers';
 import { Image } from 'astro:assets';
-import bannerBg from '../assets/images/banner-bg.jpeg';
+import bannerBg from '../assets/images/dealer-global-banner.jpg';
 
 // Import dealer logos
 import littelfuseLogo from '../assets/logos/littelfuse.png';
@@ -24,22 +24,22 @@ const logoMap: Record<string, any> = {
 <Layout title="經銷服務 | 仰發科技有限公司" description="仰發科技經銷服務品牌：Littelfuse, NICHICON, NIPPON CHEMI-CON, Panasonic, TOSHIBA 等世界級電子零件與電容器。" currentPath="/dealer/">
   
   <!-- Top Banner -->
-  <section class="relative bg-slate-900 text-white py-16 sm:py-24 overflow-hidden">
+  <section class="relative bg-slate-950 text-white min-h-[400px] lg:min-h-[480px] py-16 sm:py-24 flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
       <Image 
         src={bannerBg} 
-        alt="經銷服務 Banner" 
-        class="w-full h-full object-cover object-center opacity-30"
+        alt="經銷服務全球供應鏈" 
+        class="w-full h-full object-cover object-center opacity-85 brightness-105"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-slate-950/30"></div>
     </div>
     
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white drop-shadow-md">
         經銷服務
       </h1>
-      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+      <p class="text-slate-100 max-w-2xl mx-auto text-base sm:text-lg drop-shadow-md font-medium">
         引進全球領導品牌電子零組件與電容產品，以多元供貨滿足客戶需求
       </p>
     </div>
