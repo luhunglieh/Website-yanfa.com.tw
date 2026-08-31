@@ -5,6 +5,9 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: 'https://www.yanfa.com.tw',
   integrations: [tailwind()],
+  devToolbar: {
+    enabled: false
+  },
   build: {
     format: 'directory'
   }
