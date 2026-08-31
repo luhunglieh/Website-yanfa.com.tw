@@ -2,22 +2,10 @@
 import { siteConfig } from '../data/site';
 import { Image } from 'astro:assets';
 import yfIcon from '../assets/logos/yf-icon.png';
-import footerBg from '../assets/images/footer-bg.jpg';
 ---
 
-<footer class="relative bg-slate-900 text-slate-700 mt-auto border-t border-slate-200 overflow-hidden">
-  <!-- Background Image with Clean White Overlay -->
-  <div class="absolute inset-0 z-0">
-    <Image 
-      src={footerBg} 
-      alt="仰發科技專業出貨與物流團隊" 
-      class="w-full h-full object-cover object-center opacity-20"
-      loading="lazy"
-    />
-    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/98"></div>
-  </div>
-
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+<footer class="bg-white text-slate-600 mt-auto border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
       
       <!-- Company Overview -->
