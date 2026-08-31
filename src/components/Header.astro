@@ -9,6 +9,10 @@ interface Props {
 
 const { currentPath = '/' } = Astro.props;
 
+// Helper to resolve routes with BASE_URL
+const baseUrl = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const resolveUrl = (path: string) => `${baseUrl}${path.startsWith('/') ? path : '/' + path}`;
+
 // Normalize path for matching (e.g. '/brands/' -> '/brands')
 const normalizePath = (p: string) => p.replace(/\/+$/, '') || '/';
 const currentNorm = normalizePath(currentPath);
@@ -19,7 +23,7 @@ const currentNorm = normalizePath(currentPath);
     <div class="flex items-center justify-between h-20">
       
       <!-- Site Logo -->
-      <a href="/" class="flex items-center group transition-transform hover:scale-[1.02] focus:outline-none" title={siteConfig.companyName}>
+      <a href={resolveUrl('/')} class="flex items-center group transition-transform hover:scale-[1.02] focus:outline-none" title={siteConfig.companyName}>
         <Image 
           src={logoImg} 
           alt={siteConfig.companyName} 
@@ -37,7 +41,7 @@ const currentNorm = normalizePath(currentPath);
           const isActive = currentNorm === itemNorm;
           return (
             <a
-              href={item.href}
+              href={resolveUrl(item.href)}
               class={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
                 isActive
                   ? 'text-sky-600 bg-sky-50 font-semibold shadow-xs'
@@ -86,7 +90,7 @@ const currentNorm = normalizePath(currentPath);
       const isActive = currentNorm === itemNorm;
       return (
         <a
-          href={item.href}
+          href={resolveUrl(item.href)}
           class={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
             isActive
               ? 'text-sky-600 bg-sky-50 font-semibold'

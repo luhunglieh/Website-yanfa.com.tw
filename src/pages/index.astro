@@ -6,6 +6,9 @@ import { Image } from 'astro:assets';
 import heroBg from '../assets/images/hero-bg.webp';
 import aboutBg from '../assets/images/about-bg.webp';
 import productBg from '../assets/images/product-bg.webp';
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const resolveUrl = (path: string) => `${baseUrl}${path.startsWith('/') ? path : '/' + path}`;
 ---
 
 <Layout title={`${siteConfig.name} | 專業半導體及電子零件代理與經銷商`} currentPath="/">
@@ -34,13 +37,13 @@ import productBg from '../assets/images/product-bg.webp';
       </p>
       <div class="pt-6 flex flex-wrap justify-center gap-4">
         <a 
-          href="/brands/" 
+          href={resolveUrl('/brands/')} 
           class="px-8 py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-medium shadow-lg shadow-sky-600/30 transition-all duration-200 hover:-translate-y-0.5"
         >
           代理品牌
         </a>
         <a 
-          href="/dealer/" 
+          href={resolveUrl('/dealer/')} 
           class="px-8 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium border border-white/20 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5"
         >
           經銷服務
@@ -165,7 +168,7 @@ import productBg from '../assets/images/product-bg.webp';
             </div>
             <div class="pt-6">
               <a 
-                href="/brands/" 
+                href={resolveUrl('/brands/')} 
                 class="inline-flex items-center text-sm font-semibold text-sky-400 hover:text-sky-300 transition-colors"
               >
                 瀏覽代理品牌詳細規格 ›
@@ -186,7 +189,7 @@ import productBg from '../assets/images/product-bg.webp';
             </div>
             <div class="pt-6">
               <a 
-                href="/dealer/" 
+                href={resolveUrl('/dealer/')} 
                 class="inline-flex items-center text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 瀏覽經銷品牌型錄 ›
