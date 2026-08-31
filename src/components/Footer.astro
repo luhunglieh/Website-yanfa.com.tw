@@ -2,19 +2,19 @@
 import { siteConfig } from '../data/site';
 import { Image } from 'astro:assets';
 import yfIcon from '../assets/logos/yf-icon.png';
-import footerGrassBg from '../assets/images/footer-grass-bg.jpg';
+import footerGrassBg from '../assets/images/footer-grass-v2.jpg';
 ---
 
 <footer class="relative bg-emerald-950/5 text-slate-700 mt-auto border-t border-emerald-100/80 overflow-hidden">
   <!-- Subtle Green Grass Background with Translucent Clean Overlay -->
-  <div class="absolute inset-0 z-0 pointer-events-none">
+  <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
     <Image 
       src={footerGrassBg} 
       alt="青青綠草地背景" 
-      class="w-full h-full object-cover object-bottom opacity-30"
+      class="w-full h-full object-cover object-bottom opacity-18 blur-[1.5px] scale-105"
       loading="lazy"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-white/92 via-white/82 to-emerald-50/75"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-emerald-50/80"></div>
   </div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
