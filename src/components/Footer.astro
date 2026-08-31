@@ -2,10 +2,22 @@
 import { siteConfig } from '../data/site';
 import { Image } from 'astro:assets';
 import yfIcon from '../assets/logos/yf-icon.png';
+import footerGrassBg from '../assets/images/footer-grass-bg.jpg';
 ---
 
-<footer class="bg-white text-slate-600 mt-auto border-t border-slate-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+<footer class="relative bg-emerald-950/5 text-slate-700 mt-auto border-t border-emerald-100/80 overflow-hidden">
+  <!-- Subtle Green Grass Background with Translucent Clean Overlay -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <Image 
+      src={footerGrassBg} 
+      alt="青青綠草地背景" 
+      class="w-full h-full object-cover object-bottom opacity-30"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-white/92 via-white/82 to-emerald-50/75"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
       
       <!-- Company Overview -->
