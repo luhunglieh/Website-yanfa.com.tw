@@ -32,22 +32,23 @@ const logoMap: Record<string, any> = {
 <Layout title="代理品牌 | 仰發科技有限公司" description="仰發科技代理品牌陣容：融欣 Jackcon, 杰力科技 EMC, 尼克森 NIKO-SEM, 友順科技 UTC, 佰鴻工業 BRT, 德微科技 ERIS, 鑫茂微 MATRIX, 科特電子 CTE, 基本半導體 BASiC。" currentPath="/brands/">
   
   <!-- Top Banner -->
-  <section class="relative bg-slate-900 text-white py-16 sm:py-24 overflow-hidden">
+  <section class="relative bg-slate-950 text-white py-16 sm:py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
       <Image 
         src={bannerBg} 
         alt="代理品牌 Banner" 
-        class="w-full h-full object-cover object-center opacity-30"
+        class="w-full h-full object-cover object-center opacity-85 brightness-105"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+      <!-- Soft translucent gradient for text legibility without dimming the image -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/30 to-slate-950/40"></div>
     </div>
     
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white drop-shadow-md">
         代理品牌
       </h1>
-      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+      <p class="text-slate-100 max-w-2xl mx-auto text-base sm:text-lg drop-shadow-sm font-medium">
         嚴選國內外頂尖半導體與電子元件製造大廠，提供原廠品質保證與完整技術支援
       </p>
     </div>
