@@ -42,7 +42,7 @@ export const brandsData: BrandItem[] = [
     fullName: '友順科技股份有限公司 (Unisonic Technologies Co., Ltd.)',
     logo: '/src/assets/logos/utc.png',
     description: '友順科技股份有限公司成立於1990年，專注致力於類比IC及離散式組件Discrete研發、設計、製造、封裝、測試及行銷業務。產品以IC為主(涵蓋Power Management、Amplifier / Comparator、Analog Switches、Hall ICs、Special Application ICs、Logic等)，Discrete為輔(涵蓋Transistors、MOSFETs、TRIACs、SCRs、DIODEs等)，主要產品廣泛應用於通訊產品如行動電話，智慧型電話、LNB、衛星導航裝置、無線通訊設備；消費性電子產品如MP3及PMP、數位相機、可攜式裝置、液晶電視及面板產品等；PC如筆記型電腦、顯示器、鍵盤、無線滑鼠 、主機板、VGA卡、電源供應器、DC FAN、Adapter、外接式硬碟儲存設備及電腦週邊產品等相關市場。',
-    officialUrl: 'http://www.unisonic.com.tw/product-new.asp',
+    officialUrl: 'https://www.unisonic.com.tw/product.htm',
     badge: '代理品牌'
   },
   {
