@@ -3,8 +3,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://luhunglieh.github.io',
-  base: '/Website-yanfa.com.tw/',
+  site: 'https://www.yanfa.com.tw',
+  base: '/',
   integrations: [tailwind()],
   devToolbar: {
     enabled: false
