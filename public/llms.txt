@@ -1,0 +1,35 @@
+# 仰發科技有限公司 (Website-yanfa.com.tw)
+
+> 仰發科技有限公司 (Yanfa Technology Co., Ltd.) 創立於西元 2007 年，為台灣專業半導體及主被動電子零組件代理與經銷商。
+
+## 核心代理與經銷領域
+- 半導體元件：MOSFET (高低壓金氧半場效電晶體)、電晶體 (BJT)、二極體 (Diode)、蕭特基二極體 (Schottky)、三極體、穩壓 IC、ESD 保護元件。
+- 第三代半導體：碳化矽 (SiC) SBD 二極體、SiC MOSFET。
+- 被動元件：鋁質電解電容 (Aluminum Electrolytic Capacitors)、固態電容 (Solid Capacitors)、貼片電感、壓敏電阻。
+- 光電與保護元件：LED 發光二極體、Littelfuse 電路保護與保險絲。
+
+## 代理原廠品牌
+- 冠寶科技 (Jackcon)
+- 義發科技 (EMC)
+- 尼克森微電子 (Niko-Sem)
+- 友順科技 (UTC)
+- 佳展科技 (BRT)
+- 德微科技 (Eris)
+- 邁斯半導體 (Matrix)
+- 華太電子 (CTE)
+- 瞻芯電子 (Basic Semiconductor)
+
+## 國際知名經銷合作夥伴
+- Littelfuse
+- Nichicon
+- Nippon Chemi-Con
+- Panasonic
+- Toshiba
+
+## 官方聯絡資訊
+- 公司名稱：仰發科技有限公司 (Yanfa Technology Co., Ltd.)
+- 公司地址：235 新北市中和區建八路181號2樓
+- 聯絡電話：02-2228-6936
+- 傳真號碼：02-2228-1776
+- 電子信箱：jane.sun@yanfa.com.tw
+- 官方網站：https://www.yanfa.com.tw/

@@ -1,0 +1,29 @@
+# ====================================================================
+# Yanfa Website Workspace Ignore (.geminiignore)
+# Antigravity 2.0 Token Optimization & Search Isolation
+# ====================================================================
+
+# 1. Astro Compiled Output & Cache (避免全域搜尋雙重讀取)
+dist/
+dist/**/*
+.astro/
+.astro/**/*
+
+# 2. Dependencies & Heavy Lock Files
+node_modules/
+node_modules/**/*
+package-lock.json
+
+# 3. Logs, Temp, Backups & Conversation Brain
+*.log
+*.tmp
+*.bundle
+*.zip
+*.tar.gz
+*.7z
+logs/
+logs/**/*
+scratch/
+scratch/**/*
+brain/
+brain/**/*

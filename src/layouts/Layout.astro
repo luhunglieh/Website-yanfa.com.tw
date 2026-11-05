@@ -56,6 +56,45 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://www.yanf
       }
     </script>
     
+    <!-- AEO / Schema.org Structured Data -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.yanfa.com.tw/#organization",
+          "name": siteConfig.companyName,
+          "alternateName": siteConfig.name,
+          "url": "https://www.yanfa.com.tw/",
+          "logo": "https://www.yanfa.com.tw/favicon.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "建八路181號2樓",
+            "addressLocality": "中和區",
+            "addressRegion": "新北市",
+            "postalCode": "235",
+            "addressCountry": "TW"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": siteConfig.phone,
+            "contactType": "customer service",
+            "email": siteConfig.email
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.yanfa.com.tw/#website",
+          "url": "https://www.yanfa.com.tw/",
+          "name": siteConfig.title,
+          "description": siteConfig.description,
+          "publisher": {
+            "@id": "https://www.yanfa.com.tw/#organization"
+          }
+        }
+      ]
+    })} />
+
     <!-- Google Fonts: Noto Sans TC & Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

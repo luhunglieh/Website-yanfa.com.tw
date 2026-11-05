@@ -20,10 +20,16 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 astro-debug.log*
+logs/
+logs/**/*
+*.log
+*.tmp
 
 # OS & Editor
 .DS_Store
 Thumbs.db
+ehthumbs.db
+desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
@@ -36,6 +42,24 @@ Thumbs.db
 
 # Legacy / Scratch
 *.bak
-*.tmp
 convert.cjs
+scratch/
+scratch/**/*
 
+# ==========================================
+# 備份檔與壓縮檔 (避免誤放專案根目錄被追蹤)
+# ==========================================
+*.bundle
+*.zip
+*.tar.gz
+*.7z
+
+# ==========================================
+# 對話紀錄、AI 記憶庫與隱私安全絕對隔離 (完全禁止上傳)
+# ==========================================
+CONVERSATION_MEMORY.md
+TOKEN_OPTIMIZATION_GLOBAL.md
+brain/
+brain/**/*
+*.jsonl
+transcript*.jsonl
