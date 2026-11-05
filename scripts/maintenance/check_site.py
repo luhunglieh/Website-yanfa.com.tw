@@ -118,7 +118,7 @@ def main():
         print("❌ [ERROR] dist/ 目錄不存在！請先執行 npm run build。")
         sys.exit(1)
 
-    html_files = sorted(list(DIST_DIR.rglob("*.html")))
+    html_files = sorted([p for p in DIST_DIR.rglob("*.html") if not (p.name.startswith("google") and p.name.endswith(".html"))])
     if not html_files:
         print("❌ [ERROR] dist/ 未包含任何 HTML 檔案！")
         sys.exit(1)

@@ -49,6 +49,9 @@ def find_html_files():
     html_files = []
     if DIST_DIR.exists():
         for p in DIST_DIR.rglob("*.html"):
+            # 排除 Google Search Console 驗證檔案等純文字 token 檔
+            if p.name.startswith("google") and p.name.endswith(".html"):
+                continue
             html_files.append(p)
     return sorted(html_files)
 
